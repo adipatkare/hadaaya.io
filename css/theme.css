@@ -7,12 +7,14 @@
 
 .temp-img {
    display: flex;
+   width: 100vw;
+   height: auto;
 align-items: center;
 }
 
 .temp-nav {
    display: flex;
-   width: auto;
+   width: 100vw;
 height: 11.125rem;
 flex-shrink: 0;
 justify-content: center;
@@ -22,10 +24,17 @@ align-items: center;
 
 .temp-logo {
    display: flex;
-   width: auto;
+   
 height: 4.375rem;
 flex-shrink: 0;
 padding: 3.37rem;
 justify-content: center;
 align-items: center;
 }
+
+@media only screen and (max-width: 620px) {
+   /* For mobile phones: */
+   .temp-img, .temp-nav {
+     width: 100%;
+   }
+ }
